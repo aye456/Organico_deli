@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deli Orgánico - Tienda Saludable</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #388E3C;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1606788075761-1ff7f68cfd9c');
+      background-size: cover;
+      background-position: center;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 1rem;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .producto {
+      width: 200px;
+      margin: 1rem;
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .contacto input, .contacto textarea {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+    }
+    footer {
+      background-color: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: #2E7D32;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deli Orgánico</h1>
+    <p>Tu tienda de confianza en productos naturales y sostenibles</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#historia">Historia</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#politicas">Políticas</a>
+  </nav>
+  <div class="hero" id="inicio">
+    ¡Bienvenido a una vida saludable y consciente!
+  </div>
+  <section class="section" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Frutas frescas">
+        <p>Frutas orgánicas</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1585238342028-8b1456e75b0b" alt="Vegetales">
+        <p>Vegetales de temporada</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1603394175786-a3c1c116112b" alt="Semillas y nueces">
+        <p>Semillas y nueces</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1615485297224-d20aa1e897d0" alt="Aceites esenciales">
+        <p>Aceites esenciales</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1572441710534-7801c6826f4d" alt="Miel natural">
+        <p>Miel pura de abeja</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Deli Orgánico nació en 2020 como un proyecto familiar en apoyo al comercio justo y la salud natural. Desde entonces, hemos colaborado con productores locales para ofrecer productos frescos, sin conservadores ni químicos, que promueven el bienestar de nuestros clientes y el planeta.</p>
+  </section>
+  <section class="section" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una tienda comprometida con la salud y el medio ambiente. Promovemos un estilo de vida saludable a través de alimentos orgánicos, naturales y sostenibles. Nos dedicamos a apoyar agricultores responsables y a fomentar el consumo consciente en nuestras comunidades.</p>
+  </section>
+  <section class="section contacto" id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <section class="section" id="politicas">
+    <h2>Políticas de Privacidad</h2>
+    <p>En Deli Orgánico, protegemos tu información. Los datos personales que nos proporciones serán utilizados únicamente para contactarte sobre tus pedidos o promociones. No compartimos tus datos con terceros. Puedes solicitar la eliminación de tus datos en cualquier momento.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Deli Orgánico | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
