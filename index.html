@@ -1,15 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deli Orgánico - Tienda Saludable</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deli Orgánico - Variedad Natural</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #fafafa;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
@@ -29,46 +29,29 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1606788075761-1ff7f68cfd9c');
-      background-size: cover;
-      background-position: center;
-      height: 280px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2.2rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-      text-align: center;
-      padding: 1rem;
-    }
     .section {
       padding: 2rem;
     }
     .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
     }
     .producto {
-      width: 200px;
-      margin: 1rem;
-      text-align: center;
-      background: #fff;
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 1rem;
+      text-align: center;
     }
     .producto img {
-      width: 100%;
-      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-    .contacto input, .contacto textarea {
-      display: block;
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
+    .producto p {
+      margin-top: 0.5rem;
+      font-weight: bold;
     }
     footer {
       background-color: #2E7D32;
@@ -85,65 +68,88 @@
 <body>
   <header>
     <h1>Deli Orgánico</h1>
-    <p>Tu tienda de confianza en productos naturales y sostenibles</p>
+    <p>Productos 100% naturales, directo del campo a tu mesa</p>
   </header>
   <nav>
     <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#historia">Historia</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#politicas">Políticas</a>
+    <a href="#frutas">Frutas</a>
+    <a href="#vegetales">Vegetales</a>
+    <a href="#semillas">Semillas</a>
+    <a href="#aceites">Aceites</a>
+    <a href="#miel">Miel</a>
   </nav>
-  <div class="hero" id="inicio">
-    ¡Bienvenido a una vida saludable y consciente!
-  </div>
-  <section class="section" id="productos">
-    <h2>Nuestros Productos</h2>
+
+  <section class="section" id="inicio">
+    <h2>Bienvenido</h2>
+    <p>En Deli Orgánico nos dedicamos a ofrecer productos frescos, orgánicos y saludables para ti y tu familia.</p>
+  </section>
+
+  <section class="section" id="frutas">
+    <h2>Frutas</h2>
     <div class="productos">
       <div class="producto">
-        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Frutas frescas">
-        <p>Frutas orgánicas</p>
+        <img src="https://images.unsplash.com/photo-1576402187879-d0f9b40cde1e" alt="Manzanas">
+        <p>Manzanas Orgánicas</p>
       </div>
       <div class="producto">
-        <img src="https://images.unsplash.com/photo-1585238342028-8b1456e75b0b" alt="Vegetales">
-        <p>Vegetales de temporada</p>
-      </div>
-      <div class="producto">
-        <img src="https://images.unsplash.com/photo-1603394175786-a3c1c116112b" alt="Semillas y nueces">
-        <p>Semillas y nueces</p>
-      </div>
-      <div class="producto">
-        <img src="https://images.unsplash.com/photo-1615485297224-d20aa1e897d0" alt="Aceites esenciales">
-        <p>Aceites esenciales</p>
-      </div>
-      <div class="producto">
-        <img src="https://images.unsplash.com/photo-1572441710534-7801c6826f4d" alt="Miel natural">
-        <p>Miel pura de abeja</p>
+        <img src="https://images.unsplash.com/photo-1508747703725-719777637510" alt="Fresas">
+        <p>Fresas Frescas</p>
       </div>
     </div>
   </section>
-  <section class="section" id="historia">
-    <h2>Nuestra Historia</h2>
-    <p>Deli Orgánico nació en 2020 como un proyecto familiar en apoyo al comercio justo y la salud natural. Desde entonces, hemos colaborado con productores locales para ofrecer productos frescos, sin conservadores ni químicos, que promueven el bienestar de nuestros clientes y el planeta.</p>
+
+  <section class="section" id="vegetales">
+    <h2>Vegetales</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1600891963935-0027d6ca5f2d" alt="Zanahorias">
+        <p>Zanahorias Orgánicas</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1572441710534-7801c6826f4d" alt="Espinaca">
+        <p>Espinaca de Huerto</p>
+      </div>
+    </div>
   </section>
-  <section class="section" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una tienda comprometida con la salud y el medio ambiente. Promovemos un estilo de vida saludable a través de alimentos orgánicos, naturales y sostenibles. Nos dedicamos a apoyar agricultores responsables y a fomentar el consumo consciente en nuestras comunidades.</p>
+
+  <section class="section" id="semillas">
+    <h2>Semillas y Nueces</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f207b8d65" alt="Nueces">
+        <p>Nueces de Nogal</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1576866209830-4eec4b5d1dfc" alt="Semillas de chía">
+        <p>Semillas de Chía</p>
+      </div>
+    </div>
   </section>
-  <section class="section contacto" id="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+
+  <section class="section" id="aceites">
+    <h2>Aceites Naturales</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1627308595216-4394f63b1a4e" alt="Aceite de coco">
+        <p>Aceite de Coco Virgen</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443" alt="Aceite de oliva">
+        <p>Aceite de Oliva Extra Virgen</p>
+      </div>
+    </div>
   </section>
-  <section class="section" id="politicas">
-    <h2>Políticas de Privacidad</h2>
-    <p>En Deli Orgánico, protegemos tu información. Los datos personales que nos proporciones serán utilizados únicamente para contactarte sobre tus pedidos o promociones. No compartimos tus datos con terceros. Puedes solicitar la eliminación de tus datos en cualquier momento.</p>
+
+  <section class="section" id="miel">
+    <h2>Miel Natural</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1582719478250-c5f49ee0f63c" alt="Miel pura">
+        <p>Miel de Abeja Orgánica</p>
+      </div>
+    </div>
   </section>
+
   <footer>
     <p>&copy; 2025 Deli Orgánico | Todos los derechos reservados</p>
   </footer>
